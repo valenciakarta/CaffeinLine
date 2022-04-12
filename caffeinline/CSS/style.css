@@ -1,0 +1,374 @@
+@font-face {
+  font-family: montserrat;
+  src: url(Montserrat-SemiBold.ttf);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+  font-family: montserrat;
+}
+
+body {
+  height: 100%;
+}
+
+#logo img {
+  width: 80px;
+  height: 80px;
+}
+
+#navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+}
+
+.home a {
+  color: #635656;
+  text-shadow: 0 0 2px lightgray;
+  text-align: center;
+  font-size: 15pt;
+  background-color: white;
+  top: 0;
+}
+
+.home a:hover {
+  opacity: 0.7;
+}
+
+#dropdown ul li {
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0 0 3px lightgray, 0 0 3px gray;
+  border-radius: 10px;
+  list-style: none;
+  text-align: center;
+  width: 220px;
+  height: 25px;
+  /* margin-bottom: 2px; */
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-content a {
+  color: #635656;
+  font-size: 15pt;
+}
+
+.dropdown-content a:hover {
+  opacity: 0.7;
+}
+
+#dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* image slider */
+#content {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeebe3;
+  height: auto;
+}
+#about {
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+#title-about {
+  display: flex;
+  text-align: center;
+  font-size: 100px;
+  color: #635656;
+}
+.about-us {
+  align-items: center;
+  padding: 50px;
+  font-size: 50px;
+  color: #635656;
+}
+
+#title-slider {
+  padding-top: 50px;
+  font-size: 50px;
+  color: #635656;
+}
+
+#slide-content {
+  width: 100%;
+  display: flex;
+}
+
+.arrow {
+  display: inline-block;
+  padding-top: 200px;
+  height: 50px;
+  width: 50px;
+}
+
+.arrowR {
+  display: inline-block;
+  padding-top: 200px;
+  height: 50px;
+  width: 50px;
+}
+
+.arrow:hover {
+  opacity: 50%;
+}
+
+.arrowR:hover {
+  opacity: 50%;
+}
+
+.image {
+  display: none;
+  width: 700px;
+  height: 400px;
+  padding-bottom: 100px;
+}
+
+.active {
+  display: flex;
+}
+
+div#announcement {
+  position: sticky;
+  bottom: 0;
+  left: 0%;
+}
+
+#announcement {
+  background-color: #ad564c;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+#announcement img {
+  width: 40px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+#announcement p {
+  color: white;
+  font-size: 15pt;
+}
+
+footer {
+  background-color: #ede6d3;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #635656;
+  font-size: 15pt;
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  #logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+  .home a {
+    color: #635656;
+    text-shadow: 0 0 1px lightgray;
+    text-align: center;
+    font-size: 7pt;
+    background-color: white;
+  }
+
+  #dropdown li {
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0 0 3px lightgray, 0 0 1px gray;
+    border-radius: 5px;
+    list-style: none;
+    text-align: center;
+    width: 110px;
+    height: 12px;
+    background-color: white;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
+
+  .dropdown-content a {
+    color: #635656;
+    font-size: 7pt;
+  }
+
+  #dropdown > .dropdown-content {
+    display: block;
+  }
+
+  #title-about {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    color: #635656;
+  }
+  .about-us {
+    align-items: center;
+    padding: 50px;
+    font-size: 25px;
+    color: #635656;
+  }
+
+  #title-slider {
+    padding-top: 50px;
+    font-size: 25px;
+    color: #635656;
+  }
+
+  #slide-content {
+    display: flex;
+  }
+
+  .arrow {
+    display: inline-block;
+    padding-top: 150px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .arrowR {
+    display: inline-block;
+    padding-top: 150px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .arrow:hover {
+    opacity: 50%;
+  }
+
+  .arrowR:hover {
+    opacity: 50%;
+  }
+
+  .image {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  div#announcement {
+    position: sticky;
+    bottom: 0;
+    left: 0%;
+  }
+
+  #announcement {
+    background-color: #ad564c;
+    display: flex;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #announcement img {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+  }
+
+  #announcement p {
+    color: white;
+    font-size: 7pt;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    background-color: #eeebe3;
+  }
+
+  .sub {
+    font-size: 17pt;
+    color: #635656;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 0%;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .column img {
+    padding-top: 50px;
+    width: 100vw;
+  }
+
+  .column img:hover {
+    opacity: 1;
+  }
+
+  .column p {
+    text-align: center;
+    font-size: 10pt;
+  }
+
+  .name {
+    padding: 10px;
+    padding-bottom: 5px;
+  }
+
+  footer {
+    background-color: #ede6d3;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #635656;
+    font-size: 7pt;
+  }
+
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+}

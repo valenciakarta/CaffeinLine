@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../CSS/payment.css">
+    <script src="../JS/payment.js"defer></script>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <a href="caffeinline-homepage.html"></a>
+                <img src="../IMG/logo.png" alt="logo">
+            </div>
+            <div id="dropdown">
+                <ul>
+                    <li class="home"><a href="payment.html">PAYMENT</a></li>
+                    <div class="dropdown-content">
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="menubeverages.html">MENU BEVERAGES</a></li>
+                        <li><a href="menudessert.html">MENU DESSERTS</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="bg">
+        <h2 id="header">Payment</h2>
+        <form action="">
+            <div>
+                <label for="name">Name: </label><br>
+                <input type="text" id="name" name="name"><br>
+            </div>
+            <div>
+                <label for="email">Email: </label><br>
+                <input type="text" id="email" name="email"><br>
+            </div>
+            <div>
+                <label for="city">City: </label><br>
+                <input type="text" id="city" name="city"><br>
+            </div>
+            <div>
+                <label for="address">Address: </label><br>
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="payment">Payment Method: </label><br>
+                <input type="radio" name="payment" id="paypal" value="paypal" checked onclick="showHideform()">Paypal
+                <input type="radio" name="payment" id="visa" value="visa" onclick="showHideform()">Visa
+                <div id="formvisa">
+                    <form action="">
+                        <div>
+                            <label for="cnumber">Card Number: </label><br>
+                            <input type="text" id="cnumber" name="cnumber"><br>
+                        </div>
+                        <div>
+                            <label for="validity">Validity(MM/YY): </label><br>
+                            <input type="text" id="validity" name="validity"><br>
+                        </div>
+                        <div>
+                            <label for="cvvn">CVV Number: </label><br>
+                            <input type="text" id="cvvn" name="cvvn"><br>
+                        </div>
+                        
+                    </form>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <input type="checkbox" name="agreement" id="agreement" value="Agree">
+                    <label for="agreement">I Agree With Terms & Condition</label><br>
+                </div>
+            </div>
+            <div id="error"></div><br>
+            <div class="sumbit">
+                <input type="button" id="submit" name="submit" value="Submit" onclick="fnValidate()">
+            </div>
+        </form>
+        </div>
+    </div>
+    <div id="announcement">
+        <img src="../IMG/delivery.png" alt="">
+        <p>FREE DELIVERY FEE WITHOUT MINIMUM TRANSACTION!</p>
+    </div>
+    <footer>
+        <img src="../IMG/logo.png" alt="">
+        <p>&copy; 2021 CAFFEIN LINE</p>
+    </footer>
+</body>
+</html>

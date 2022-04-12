@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/CUstyle.css">
+    <script src="../JS/CUscript.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <a href="homepage.html"><img src="../IMG/logo.png" alt="logo"></a>
+            </div>
+            <div id="dropdown">
+                <ul>
+                    <li class="home"><a href="contactus.html">CONTACT US</a></li>
+                    <div class="dropdown-content">
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="menubeverages.html">MENU BEVERAGES</a></li>
+                        <li><a href="menudessert.html">MENU DESSERTS</a></li>
+                        <li><a href="payment.html">PAYMENT</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="bg">
+            <h2 id="header">Contact Us</h2>
+            <form action="">
+            <div>
+                <label for="name">Name: </label><br>
+                <input type="text" id="name" name="name"><br>
+            </div>
+            <div>
+                <label for="email">Email: </label><br>
+                <input type="text" id="email" name="email"><br>
+            </div>
+            <div>
+                <label for="message">Message: </label><br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+            </div>
+            <div id="error"></div><br>
+            <div class="sendb">
+                <input type="button" id="send" name="send" value="Send" onclick="fnValidate()">
+            </div>
+            </form>
+        </div>
+    </div>
+    <div id="announcement">
+        <img src="../IMG/delivery.png" alt="">
+        <p>FREE DELIVERY FEE WITHOUT MINIMUM TRANSACTION!</p>
+    </div>
+    <footer>
+        <img src="../IMG/logo.png" alt="">
+        <p>&copy; 2021 CAFFEIN LINE</p>
+    </footer>
+</body>
+</html>
